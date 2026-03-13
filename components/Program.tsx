@@ -15,7 +15,7 @@ export function Program() {
 const ProgramItem = ({ time, title, address, img }: any) => {
   return (
     <div className="FontSHK_Dzeragir italic my-8 flex flex-col items-center text-2xl text-center">
-      <h3 >{title}</h3>
+      <h3 className=" text-[#65452C]">{title}</h3>
       <p>{time}</p>
 
       <Image
@@ -31,7 +31,7 @@ const ProgramItem = ({ time, title, address, img }: any) => {
         alt="icon1"
         width={500}
         height={500}
-        className="w-full "
+        className="w-full  rounded-3xl "
       />
 
       {address != "" && (

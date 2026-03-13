@@ -16,8 +16,8 @@ export function Calendar({ year = 2025, month = 9, highlightDay = 8 }) {
   for (let i = 1; i <= daysInMonth; i++) calendarDays.push(i);
 
   return (
-    <div className="FontArmAllegroU text-black text-center mt-7">
-      <div className="FontSHK_Dzeragir grid grid-cols-7  text-base  text-black">
+    <div className="FontSHK_Dzeragir text-black  text-[18px] text-center mt-7">
+      <div className="FontSHK_Dzeragir grid grid-cols-7  text-black">
         {weekDays.map((day) => (
           <div key={day}>{day}</div>
         ))}
@@ -27,7 +27,7 @@ export function Calendar({ year = 2025, month = 9, highlightDay = 8 }) {
           day ? (
             <div
               key={idx}
-              className=" relative py-2 rounded-full  text-3xl font-semibold flex items-center justify-center "
+              className=" relative py-2 rounded-full  text-3xl flex items-center justify-center "
             >
               {day === highlightDay && (
                 <Image
@@ -35,7 +35,7 @@ export function Calendar({ year = 2025, month = 9, highlightDay = 8 }) {
                   alt="icon1"
                   width={500}
                   height={500}
-                  className="w-8 absolute -right-2 top-1 rotate-20"
+                  className="w-8 absolute -right-2 -top-2 rotate-22"
                 />
               )}
               <p>{day}</p>
