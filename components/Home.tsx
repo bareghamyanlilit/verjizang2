@@ -104,7 +104,7 @@ export function Home() {
           className="w-full my-7 rounded-3xl  "
         />
       </div>
-      <h2 className="FontSHK_Dzeragirm text-center text-5xl">23 / 05 / 2026</h2>
+      <h2 className="FontSHK_Dzeragir text-center text-5xl">23 / 05 / 2026</h2>
         <Image
           src="/icon4.png"
           alt="icon1"
