@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="m-auto max-w-md bg-[#FAE7D9]">
+      <body className="m-auto max-w-md bg-[#FAE7D9]  font-normal! not-italic! normal-case!">
         {children}
         <Footer />
       </body>

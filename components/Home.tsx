@@ -40,7 +40,7 @@ export function Home() {
         </p>
       </div>
 
-      <div className="FontSHK_Dzeragir relative italic text-center py-7 bg-[##FFFF69]">
+      <div className="FontSHK_Dzeragir relative text-center py-7 bg-[##FFFF69]">
         <div className="py-12 mb-10">
           <motion.h3 {...anim}  className=" static z-2 text-[26px] px-7 mt-3">
             Ամեն սկիզբ ունի ավարտ, <br />
@@ -58,7 +58,7 @@ export function Home() {
         <TimeBox />
       </div>
       <div className="px-7">
-        <motion.p {...anim}  className="FontSHK_Dzeragir italic text-2xl rounded-3xl py-7  text-center bg-[#FFFFFF69]">
+        <motion.p {...anim}  className="FontSHK_Dzeragir text-2xl rounded-3xl py-7  text-center bg-[#FFFFFF69]">
           Սիրով հրավիրում ենք Ձեզ <br /> ներկա գտնվելու մեր <br /> ՎԵՐՋԻՆ ԶԱՆԳ{" "}
           <br />
           հանդիսավոր միջոցառմանը։
@@ -66,7 +66,7 @@ export function Home() {
         </motion.p>
       </div>
 
-      <div className="FontSHK_Dzeragir text-xl italic p-7 grid gap-2">
+      <div className="FontSHK_Dzeragir text-xl p-7 grid gap-2">
         <motion.p {...anim}  className="text-center text-2xl text-[#65452C] tracking-[8px]">
           Սիրով սպասում ենք
         </motion.p>
@@ -104,7 +104,7 @@ export function Home() {
           className="w-full my-7 rounded-3xl  "
         />
       </div>
-      <h2 className="FontSHK_Dzeragir text-center text-5xl">23 / 05 / 2026</h2>
+      <h2 className="FontSHK_Dzeragirm text-center text-5xl">23 / 05 / 2026</h2>
         <Image
           src="/icon4.png"
           alt="icon1"
