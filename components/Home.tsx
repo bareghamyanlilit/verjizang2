@@ -39,17 +39,18 @@ export function Home() {
         <TimeBox />
       </div>
       <div className="px-7">
-
-      <p className="FontSHK_Dzeragir italic text-2xl rounded-3xl py-7  text-center bg-[#FFFFFF69]">
-        Սիրով հրավիրում ենք Ձեզ <br /> ներկա գտնվելու մեր <br /> ՎԵՐՋԻՆ ԶԱՆԳ{" "}
-        <br />
-        հանդիսավոր միջոցառմանը։
-        <br /> 23 Մայիսի, 2026 <br /> Ժամը՝ 10:00 <br /> Մեր հարազատ դպրոցում
-      </p>
+        <p className="FontSHK_Dzeragir italic text-2xl rounded-3xl py-7  text-center bg-[#FFFFFF69]">
+          Սիրով հրավիրում ենք Ձեզ <br /> ներկա գտնվելու մեր <br /> ՎԵՐՋԻՆ ԶԱՆԳ{" "}
+          <br />
+          հանդիսավոր միջոցառմանը։
+          <br /> 23 Մայիսի, 2026 <br /> Ժամը՝ 10:00 <br /> Մեր հարազատ դպրոցում
+        </p>
       </div>
 
       <div className="FontSHK_Dzeragir text-xl italic p-7 grid gap-2">
-        <p className="text-center text-2xl text-[#65452C] tracking-[8px]">Սիրով սպասում ենք</p>
+        <p className="text-center text-2xl text-[#65452C] tracking-[8px]">
+          Սիրով սպասում ենք
+        </p>
 
         <Image
           src="/img2.jpg"
@@ -58,17 +59,21 @@ export function Home() {
           height={500}
           className="w-full rounded-3xl my-10"
         />
-        <p className="text-center text-2xl text-[#65452C] tracking-[8px]">Պահպանիր Օրը</p>
+        <p className="text-center text-2xl text-[#65452C] tracking-[8px]">
+          Պահպանիր Օրը
+        </p>
         <Calendar year={2026} month={3} highlightDay={20} />
       </div>
 
-      <Image
-        src="/img2.1.jpg"
-        alt="icon1"
-        width={500}
-        height={500}
-        className="w-full my-7 rounded-3xl  "
-      />
+      <div className="px-7">
+        <Image
+          src="/img2.1.jpg"
+          alt="icon1"
+          width={500}
+          height={500}
+          className="w-full my-7 rounded-3xl  "
+        />
+      </div>
       <Program />
     </div>
   );
