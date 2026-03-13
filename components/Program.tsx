@@ -1,6 +1,7 @@
-import { program } from "@/data/data";
+import { anim, program } from "@/data/data";
 import Image from "next/image";
 import { CiLocationOn } from "react-icons/ci";
+import {motion} from "framer-motion"
 
 export function Program() {
   return (
@@ -15,8 +16,8 @@ export function Program() {
 const ProgramItem = ({ time, title, address, img }: any) => {
   return (
     <div className="FontSHK_Dzeragir italic my-8 flex flex-col items-center text-2xl text-center">
-      <h3 className=" text-[#65452C]">{title}</h3>
-      <p>{time}</p>
+      <motion.h3 {...anim}  className=" text-[#65452C]"style={{ whiteSpace: "pre-line" }}>{title}</motion.h3>
+      <motion.p {...anim} >{time}</motion.p>
 
       <Image
         src="/icon3.png"
@@ -38,7 +39,7 @@ const ProgramItem = ({ time, title, address, img }: any) => {
         <a
           href={`https://www.google.com/maps/search/${address}`}
           target="_blank"
-          className="inline-flex items-center gap-2 mt-2 px-4 py-1.5 text-sm underline"
+          className="inline-flex items-center gap-2 mt-2 px-4 py-1.5 text-2xl underline"
         >
           <CiLocationOn />
           Քարտեզ

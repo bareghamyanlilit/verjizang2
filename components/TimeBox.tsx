@@ -1,5 +1,8 @@
 "use client";
+import { anim } from "@/data/data";
 import { useEffect, useState } from "react";
+import {motion} from "framer-motion"
+
 
 const weddingDate: any = new Date("2026-03-20T12:00:00");
 
@@ -33,7 +36,7 @@ export function TimeBox() {
     return () => clearInterval(timer);
   }, []);
   return (
-    <section className=" flex flex-col gap-5 text-center   px-6 py-5">
+    <motion.section {...anim}   className=" flex flex-col gap-5 text-center   px-6 py-5">
       {timeLeft.finished ? (
         <div className="text-white text-2xl font-semibold px-4 bg-red-500 rounded-xl shadow">
           Միջոցառումն արդեն սկսվել է 🎉
@@ -65,13 +68,13 @@ export function TimeBox() {
           />
         </div>
       )}
-    </section>
+    </motion.section>
   );
 }
 
 const TimeBoxItem = ({ label, value }: any) => (
   <div className="px-2  text-center flex flex-col">
     <h2>{value}</h2>
-    <p className="text-base">{label}</p>
+    <p className="text-xl -mt-3">{label}</p>
   </div>
 );

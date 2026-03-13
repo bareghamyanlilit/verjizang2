@@ -1,7 +1,7 @@
 export const program = [
   {
     time: "10:00",
-    title: "ԵՐԵՎԱՆԻ ԴՊՐՈՑ",
+    title: "Հովհաննես Թումանյանի անվան\n Հիմնական թիվ 7",
     address: "",
     img:'/img3.jpg'
   },
@@ -18,3 +18,16 @@ export const program = [
     img:'/img5.jpg'
   },
 ];
+
+export const anim: any = {
+  initial: { opacity: 0, y: 10 },
+  whileInView: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      ease: "easeIn",
+    },
+  },
+  viewport: { once: true },
+};
