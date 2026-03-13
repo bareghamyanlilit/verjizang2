@@ -35,7 +35,7 @@ export function Home() {
             className="w-50 absolute -left-4 top-5 z-1"
           />
         </div>
-        <h3 className="text-3xl px-7">Մեր միջոցառմանը մնաց</h3>
+        <h3 className="text-3xl px-7">Վերջին Զանգին մնաց</h3>
         <TimeBox />
       </div>
       <div className="px-7">
@@ -49,7 +49,7 @@ export function Home() {
       </div>
 
       <div className="FontSHK_Dzeragir text-xl italic p-7 grid gap-2">
-        <p className="text-center text-2xl text-[#65452C]">Սիրով սպասում ենք</p>
+        <p className="text-center text-2xl text-[#65452C] tracking-[8px]">Սիրով սպասում ենք</p>
 
         <Image
           src="/img2.jpg"
@@ -58,7 +58,7 @@ export function Home() {
           height={500}
           className="w-full rounded-3xl my-10"
         />
-        <p className="text-center text-2xl text-[#65452C]">Պահպանիր Օրը</p>
+        <p className="text-center text-2xl text-[#65452C] tracking-[8px]">Պահպանիր Օրը</p>
         <Calendar year={2026} month={3} highlightDay={20} />
       </div>
 
